@@ -19,7 +19,8 @@ interface lead {
 
 function Home() {
   const [leads, setlead] = useState<lead[]>([]);
- 
+  const [isModalOpen, setModalOpen] = useState(false);
+
   useEffect(() => {
     axios
       .get("http://localhost:3000/lead")
@@ -39,8 +40,14 @@ function Home() {
         <div className="content-area">
           <div className="bd_lead">
             <h1>Welcome to Leads !</h1>
-            <button className="addbtn">+ Lead</button>
-           <Modal />
+            <button className="addbtn" onClick={() => setModalOpen(true)}>+ Lead</button>
+           {isModalOpen && (
+          <Modal 
+            title="Create Leads"
+            close={() => setModalOpen(false)}
+          />
+        )}
+
           </div>
 
         </div>
