@@ -1,0 +1,8 @@
+.sidebar ul {
+  list-style-type: none; /* removes bullet points */
+  padding-left: 0;       /* optional: removes default left padding */
+  margin: 0;             /* optional: resets margin */
+}
+nav{
+    cursor: pointer;
+}

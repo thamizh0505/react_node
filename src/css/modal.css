@@ -1,0 +1,34 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+}
+.modal-container{
+   background-color: #fff;
+    max-width: 600px;
+    min-height: 300px;
+    padding: 20px;
+    width:100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #0000001a;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+.modal__title{
+    padding:1rem;
+
+} 
+.modal__content{
+    flex:1;
+    padding:1rem;
+}
+
