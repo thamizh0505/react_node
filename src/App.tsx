@@ -46,7 +46,8 @@ const handleSubmit = (e: React.FormEvent) => {
     justifyContent: 'center', 
     alignItems: 'center', 
     height: '100vh',
-    flexDirection:'column'
+    flexDirection:'column',
+    width: '100vw',
   }}>
     <div>
 

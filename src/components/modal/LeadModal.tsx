@@ -3,7 +3,7 @@ import "../../css/modal.css";
 
 interface ModalProps {
     title: string;
-    close: () => void;
+    close: () => void;//void means it returns nothing(null)
 }
 
 const Modal = ({title,close}:ModalProps) => {
